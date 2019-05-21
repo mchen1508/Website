@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<!link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<!link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+<!link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amiri:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+
+        
+        <title>Resume - Michael Chen </title>
+        
+        
+    <style>
+        /* For mobile: */
+        
+            body {margin:0;}
+            
+            /* Style total navbar (z-index to put on top)*/
+            ul.nav-group {
+                list-style-type: none;
+                margin: 0 ;
+                padding: 0 ;
+                overflow: hidden;
+                background-color: #333;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 10;
+            }
+            
+            /* Define block elements */
+            .nav-group a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            height:50px;
+            float: none;
+            display: block;
+            text-align: center;
+            border-right:none;
+            border-left:none;
+            }            
+            
+            .nav-group a:hover {
+            background-color: #daa520;
+            }
+            
+            /* Hides drop down, shows drop down icon */
+            .nav-group nav {display: none;}
+            
+            .nav-group a.icon {
+                float: right;
+                display: block;
+            }
+            
+            .nav-group a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            }
+            
+
+            
+            /* Styles the dropped down menu (appears through Javascript by modifying class)*/
+            .nav-group.appear a{
+                border-bottom:1px solid #FFDF00;
+                }
+           
+            .nav-group.appear nav {
+                display: block;
+                float:none;
+                }
+                
+            .nav-group.appear nav li a{
+                float:none;
+                display:block
+                } 
+                
+            .nav-group.appear nav li.endbut a
+                {border-bottom:none;
+            }
+            
+            .nav-group.appear a.icon {
+                float: right;
+                display: block;
+            }
+            
+            
+        @media only screen and (min-width: 1050px) {
+        /* For desktop: */
+        
+        .nav-group {
+            display:block;
+            justify-content: center;
+            
+            }
+            
+          .nav-group:first-child li{
+            float:left;
+            width:25%;
+            }
+
+
+        .nav-group nav {
+            display: inline-block;
+            float:right;
+            border-bottom:none;
+            width:75%
+            }
+
+          
+        .nav-group nav li a{
+            border-left: 1px solid #FFDF00;
+
+            }
+        .nav-group nav li.endbut
+                {float:right;
+                width:33.3333%;
+            }  
+        .nav-group nav li.midbut
+            {
+            width:33.3333%;
+            }   
+            
+        .nav-group a.icon {
+            display: none;
+        }    
+
+
+ 
+    </style>
+    
+    <script>
+    /* Toggle between adding and removing the "appear" class to nav when the user clicks on the icon */
+    function navFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav-group") {
+            x.className += " appear";
+        } else {
+            x.className = "nav-group";
+        }
+    }
+    
+
+    </script>
+    
+    <head >
+
+    <! Navigation Bar (unordered list)>
+    <ul class = 'nav-group' id = 'navbar'>
+        <! Elements (list items)>
+        <li><a href="/">About</a></li>
+        
+        <! Dropdown icon>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+        
+        <! Container of other elements>
+        <nav>
+                   
+                <li class='midbut' ><a href="/projects/">Projects</a></li> 
+                
+                <li class='midbut' ><a href="/resume/">Resume</a></li>                
+
+                <li class='endbut' ><a href="/contact/">Contact</a></li>
+
+
+        </nav>
+        
+    </ul>
+    </head>
+    
+    <body>
+    <! Flashed message renderer>
+
+        
+          
+        
+
+            
+<style>
+
+    .clear { clear:both; }
+
+    .downlink{
+        float:right;
+        z-index:2;
+        position:relative;
+        width:100%;
+        margin:15px 0px 5px 0px;
+        text-align:center;
+        }
+ .heading{
+        display:inline-block;
+        text-align:left;
+        width:95%;
+        font-size:1.2em;
+        font-family:Garamond;
+        }
+   
+     
+    .sevens{
+        width:100%;
+        float:left;
+        text-align:center;
+        margin:0px;
+        font-size:2vmax;
+		word-wrap:break-word;
+        }
+        
+    .threes{
+        width:100%;
+        float:left;
+        text-align:center;
+        margin:0px;
+        font-size:2vmax;
+		text-indent: 15px;
+        }
+		
+	.halves{
+        width:100%;
+        float:left;
+        text-align:center;
+        margin:0px;
+        font-size:2vmax;
+		line-height:100%;
+		word-break:nomal;
+        }
+		
+    ul {
+		margin:0;
+		}
+
+	.sl {
+		margin:7px 0px 0px 0px;
+		}
+    .place{
+        width:33%;
+        float:left;
+        text-align:center;
+        margin:0px;
+        font-size:1.5vmax;
+        }
+        
+    .skillblock{
+        width:100%
+        float:left;
+        text-align:left;
+        margin:0px 0px 0px 12px;
+        font-size:1.5vmax;
+        }
+
+    .left-align{
+        width:80%;
+        display:inline-block;
+        text-align:left;
+        }
+        
+    .mix-align{
+        width:80%;
+        display:inline-block;
+        text-align:left;
+        white-space: nowrap;
+        }
+        
+    .right-align{
+        width:80%;
+        display:inline-block;
+        text-align:left;
+        white-space: nowrap;
+        }
+        
+    b {
+        text-decoration: none;
+        position: relative;
+		
+        }
+    b:after {
+        content: '';
+
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+
+        border-width: 0 0 2px;
+        border-style: solid;
+        }
+        
+
+	
+    .set-width{
+        text-align:center;
+
+    }
+    
+    .mbold{
+    font-weight:700
+    }
+@media only screen and (min-width: 691px) {
+
+
+    .downlink{
+        float:right;
+        z-index:2;
+        position:relative;
+        width:100%;
+        margin:15px 0px 5px 0px;
+        text-align:center;
+        }
+        
+    .heading{
+        display:inline-block;
+        text-align:left;
+        width:95%;
+        font-size:1.2em;
+        font-family: 'Amiri',Garamond;
+        }
+    
+     
+    .sevens{
+        width:70%;
+        float:left;
+        text-align:center;
+        margin:0px;
+        font-size:1.5vmax;
+        }
+        
+    .threes{
+        width:30%;
+        float:left;
+        text-align:center;
+        margin:0px;
+        font-size:1.5vmax;
+        }
+		
+	.halves{
+        width:50%;
+        float:left;
+        text-align:center;
+        margin:0;
+        font-size:1em;
+		line-height:95%;
+        }	
+        
+    .place{
+        width:33.33%;
+        display:inline-block;
+        }
+        
+    .skillblock{
+        min-width:0px;
+        width:33%;
+        float:left;
+        text-align:center;
+        margin:0px;
+        font-size:1.5vmax;
+        }
+        
+    .left-align{
+        width:80%;
+        display:inline-block;
+        text-align:left;
+        white-space: nowrap;
+        }
+        
+    .mix-align{
+        width:80%;
+        display:inline-block;
+        text-align:left;
+        white-space: nowrap;
+        }
+        
+    .right-align{
+        width:80%;
+        display:inline-block;
+        text-align:left;
+        white-space: nowrap;
+        }
+        
+    b {
+        text-decoration: none;
+        position: relative;
+        }
+    b:after {
+        content: '';
+
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 9px;
+
+        border-width: 0 0 2px;
+        border-style: solid;
+        }
+		
+    u {
+        text-decoration: none;
+        position: relative;
+        }
+        
+	u:after {
+        content: '';
+
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 9px;
+
+        border-width: 0 0 1px;
+        border-style: solid;
+        }
+		
+    .set-width{
+        text-align:center;
+        width:100%;
+    }
+    
+
+    
+@media only screen and (min-width: 1188px) {
+
+    .downlink{
+        float:right;
+        z-index:2;
+        position:absolute;
+        right:5%;
+        top:100px;
+        width:150px
+        }
+		
+      
+      
+    .sevens{
+        width:33%;
+        float:left;
+        text-align:center;
+        margin:0;
+        font-size:1em;
+		line-height:95%;
+        }
+        
+    .threes{
+        width:66%;
+        float:right;
+        text-align:right;
+        margin:0;
+        font-size:1em;
+		line-height:95%;
+        }
+		
+	.halves{
+        width:50%;
+        float:left;
+        text-align:center;
+        margin:0;
+        font-size:1em;
+		line-height:95%;
+        }
+		
+    .widespace{
+        width:100%;
+        float:right;
+        text-align:right;
+        margin:0;
+        font-size:1em;
+		line-height:95%;
+        }
+		
+		
+	
+    .place{
+        width:33.33%;
+        display:inline-block;
+        }
+        
+    .skillblock{
+        width:33.33%;
+        float:left;
+        text-align:center;
+        margin:0;
+        font-size:1em;
+        }
+        
+    .heading{
+        display:inline-block;
+        text-align:left;
+        width:80%;
+        font-size:1.2em;
+        font-family: 'Amiri',Garamond;
+        }
+        
+    .left-align{
+        width:33%;
+        display:inline-block;
+        text-align:left;
+        white-space: nowrap;
+        }
+        
+    .mix-align{
+        width:33%;
+        display:inline-block;
+        text-align:left;
+        white-space: nowrap;
+        }
+        
+    .right-align{
+        width:33%;
+        display:inline-block;
+        text-align:left;
+        white-space: nowrap;
+        }
+        
+    .set-width{
+        text-align:center;
+		max-width:1000px;
+		margin:auto;
+    }
+
+    }
+</style>
+
+<div class='set-width'>
+
+    <a href='/static/Michael Chen Web Resume.pdf' class='downlink'>
+    Download PDF</a>
+
+    <div class = 'big-wrapper' style='min-width:0px;'>
+        <div class ='big-name' >Michael Chen </div>
+    </div>
+
+
+
+
+    <div class = 'heading'> 
+            <u>EDUCATION</u>
+    </div>
+	
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+                <strong>Master of Science: Mechanical Engineering - Robotic Engineering Emphasis</strong>
+            </div>
+        </div>
+        
+        <div class = 'threes'> 
+            <div class = 'left-align'> 
+                <i>Aug. 2017 - May 2019</i>
+            </div>
+        </div>
+		
+	    <div class = 'sevens'> 
+            <div class = 'left-align'>
+                Cal Poly Pomona, <i>Pomona, CA</i>
+            </div>
+        </div>
+
+
+
+        <div class = 'threes'> 
+            <div class = 'left-align'>
+                   &emsp;&emsp;&emsp;&emsp;&ensp;GPA:4.0/4.0
+            </div>
+        </div>
+
+        <div class = 'widespace'> 
+            <div class = 'mix-align'>
+            </div>
+        </div>
+		
+		<div class = 'sevens'> 
+            <div class = 'left-align'> 
+                <strong>Bachelor of Science: Naval Architecture and Marine Engineering</strong>
+            </div>
+        </div>
+
+
+        <div class = 'threes'> 
+            <div class = 'left-align'>
+                <i>Aug. 2011 - Jun. 2015</i>
+            </div>
+        </div>
+
+        <div class = 'sevens'> 
+            <div class = 'right-align'> 
+                Webb Institute, <i>Glen Cove, NY </i>
+            </div>
+        </div>
+
+
+        <div class = 'widespace'> 
+            <div class = 'mix-align'>
+            </div>
+        </div>
+
+    <div class = 'heading'>
+        <u>WORK EXPERIENCE</u>
+    </div>
+
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+                <strong>Machinist</strong> – Sabrin Corporation, <i>Pasadena, CA</i>
+            </div>
+        </div>
+		
+		<div class = 'threes'> 
+            <div class = 'left-align'>
+                <i>Dec. 2016 – Feb. 2017</i>
+            </div>
+        </div>
+		
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+			<ul>
+                <li>Produced aircraft parts on CNC & conventional machines.</li>
+				</ul>
+            </div>
+        </div>
+		
+        <div class = 'widespace'> 
+            <div class = 'mix-align'>
+            </div>
+        </div>
+		
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+                <strong>Contract Marine Engineer</strong> - Boksa Marine Design, <i>Tampa, FL</i>
+            </div>
+        </div>
+		
+		<div class = 'threes'> 
+            <div class = 'left-align'>
+                <i>Mar. 2016 – Sep. 2016</i>
+            </div>
+        </div>
+		
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+			<ul>
+                <li>Designed structure, created assembly drawings for dredge barge.</li>
+				<li>Designed fluid systems with team for 103’ yacht.</li>
+				<li>Facilitated greater efficiency through utilization of software macros.</li>
+				</ul>
+            </div>
+        </div>
+		
+		<div class = 'widespace'> 
+            <div class = 'mix-align'>
+            </div>
+        </div>
+		
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+                <strong>Intern Engineer</strong> - Elliot Bay Design Group, <i>Seattle, WA</i>
+            </div>
+        </div>
+		
+		<div class = 'threes'> 
+            <div class = 'left-align'>
+                <i>Jan. 2015 – Feb. 2015</i>
+            </div>
+        </div>
+		
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+			<ul>
+                <li>Modified engineering drawings in AutoCAD, utilized Rhino to modify 3D models.</li>
+				<li>Digitized tank level data.</li>
+				</ul>
+            </div>
+        </div>	
+
+		<div class = 'widespace'> 
+            <div class = 'mix-align'>
+            </div>
+        </div>
+		
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+                <strong>Research Intern</strong> - American Bureau of Shipping, <i>Houston, TX</i>
+            </div>
+        </div>
+		
+		<div class = 'threes'> 
+            <div class = 'left-align'>
+                <i>Jan. 2014 – Feb. 2014</i>
+            </div>
+        </div>
+		
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+			<ul>
+                <li>Researched vessel safety in Polar Regions.</li>
+				<li>Developed MATLAB program for successful analysis of polar temperature data.</li>
+				</ul>
+            </div>
+        </div>			
+
+    <div class = 'heading'>
+        <u>SKILLS</u>
+    </div>
+
+		
+        <div class = 'halves'> 
+            <div class = 'left-align'>
+               	<ul>
+                <li class = 'sl'>AutoCAD, SolidWorks, 3DSmax, Rhino</li>
+				<li class = 'sl'>Python, VBA, HTML, MATLAB, LabVIEW, SQL, MathCAD</li>
+				<li class = 'sl'>Microsoft Office, Photoshop</li>
+				</ul>
+            </div>
+        </div>
+		
+		<div class = 'halves'> 
+            <div class = 'right-align'>
+               	<ul>
+                <li class = 'sl'>Basic machine shop (mill, lathe, welding)</li>
+				<li class = 'sl'>Woodshop, Lasercutting, CNC</li>
+				</ul>
+            </div>
+        </div>
+		
+		<div class = 'widespace'> 
+            <div class = 'mix-align'>
+            </div>
+        </div>
+
+          
+            
+
+    <div class = 'heading'>
+        <u>GRADUATE THESIS</u>
+    </div>
+	
+        <div class = 'sevens'> 
+            <div class = 'left-align'>
+               <a href='/static/ChenMichael_Thesis2019.pdf'> Modeling the Behavior of a Falling Object</a>
+            </div>
+        </div>
+		
+		
+		<div class = 'threes'> 
+            <div class = 'left-align'>
+            </div>
+        </div>
+		
+		<div class = 'widespace'> 
+            <div class = 'mix-align'>
+            </div>
+        </div>
+	
+
+		
+		<div class = 'widespace'> 
+            <div class = 'mix-align'>
+            </div>
+        </div>
+
+
+
+  </body>
+
+</html>
+
+

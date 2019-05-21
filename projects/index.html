@@ -12,7 +12,7 @@
 <html>
 
         
-        <title>About - Michael Chen </title>
+        <title>Projects - Michael Chen </title>
         
         
     <style>
@@ -193,7 +193,7 @@
     display: inline-block;
     vertical-align: top;
     width: 100%;
-
+    min-height: 200px;
     overflow: hidden;
 }
 
@@ -213,58 +213,102 @@
 .figure{
     display: flex;
     align-items:center;
-	justify-content:space-around;
+	justify-content:center;
 	flex-wrap:wrap;
 }
 
 p { 
    text-indent: 30px;
-   width: 100%
 }
-
 
 .wide{
 	width:100%;
-	}
-	
-@media only screen and (min-width: 982px) {
+}
+
+@media only screen and (min-width: 717px) {
+
+.image-wrap {
+    
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.image-wrap img {
+    vertical-align: top;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.4);
+    box-shadow: 0 1px 2px rgba(0,0,0,.4);
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.figure{
+    display: flex;
+    align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+}
 
 p { 
    text-indent: 30px;
-   width: 45%
-	}
+}
+
+.wide{
+	width:100%;
+}
 
 }
 </style>
-<div style = 'padding:0px 20px 20px 20px';>
+<div style = 'padding:0px 20px 20px 15px';>
     
     <div class = 'big-wrapper' style='min-width:0px'>
-        <div class ='big-name' >Michael Chen</div>
+        <div class ='big-name' >Projects</div>
     </div>
     
     <div class = 'figure'>
 
 
-
+     
         <div class = 'pic-wrapper'> 
             <div class='image-wrap'>      
-                <img src="/static/projectpics/Headshot.jpg"
+                <img src="/Rmodel.gif/K:/Acting/Generate/app/static/projectpics.jpeg "
                      > 
             </div>         
         </div>
-
-
-		<p>Hi, my name is Michael Chen and I like discovering how the world works.
-		During my undergraduate years I was lucky enough to study at the excellent Webb Institute of Naval Architecture and Marine Engineering. 
-		Through my time there, I was able to learn extensively about engineering and gained real-life experience in shipyards, yachts/containerships, and in design firms. 
-		This really gave me insight into how things are made and the amazing things that are possible when a group of people work together.<br/>
-
-		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wanting to learn even more, I decided to obtain my master's degree in Mechanical Engineering at Cal Poly Pomona. 
-		Leaning in to the school's motto of "Learn by Doing", I greatly enjoyed my work in the designing and programming of various robots.   
-		However, my love of discovery has not stopped with the completion of my schooling. 
-		I am always finding something new whether its in improvisational comedy, ballroom dancing, or playing the guitar.</p>
-
-
+		
+		<p>For my graduate thesis, I modeled the behavior of a falling object with an eye toward attitude stabilization. The full thesis can be found <a href='/static/ChenMichael_Thesis2019.pdf'>here</a>.</p>
+		
+		<div class = 'wide'> </br> </div>
+		
+		        <div class = 'pic-wrapper'> 
+            <div class='image-wrap'>      
+                <img src="/ObjectTracking.png/K:/Acting/Generate/app/static/projectpics.jpeg "
+                     > 
+            </div>         
+        </div>
+		
+		<p>I created a machine vision program for a pick and place robot in LabVIEW. The identification and tracking of two disks is shown here.</p>
+		
+		
+		<div class = 'wide'> </br> </div>
+		
+		        <div class = 'pic-wrapper'> 
+            <div class='image-wrap'>      
+                <img src="/ZymarkII.png/K:/Acting/Generate/app/static/projectpics.jpeg "
+                     > 
+            </div>         
+        </div>
+		
+		<p>I programmed this medical robot to move a cup from one location to another in Python using PID control. </p>
+		
 		
     </div> 
 </div>
